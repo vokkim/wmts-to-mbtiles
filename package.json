@@ -1,0 +1,32 @@
+{
+  "name": "wmts-to-mbtiles",
+  "version": "0.0.1",
+  "description": "Save tiles from WMTS service to MBTiles format",
+  "author": "Mikko Vesikkala",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vokkim/wmts-to-mbtiles.git"
+  },
+  "bin": "./index.js",
+  "keywords": [
+    "mbtiles",
+    "wmts",
+    "nautical",
+    "chart",
+    "tile"
+  ],
+  "dependencies": {
+    "agentkeepalive": "3.1.0",
+    "bluebird": "3.5.0",
+    "commander": "2.9.0",
+    "lodash": "4.17.4",
+    "request": "2.81.0",
+    "request-promise": "4.2.1",
+    "sqlite3": "3.1.8",
+    "xml2js": "0.4.17"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}

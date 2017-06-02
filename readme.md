@@ -51,6 +51,8 @@ Install [mbview](https://github.com/mapbox/mbview):
 
     npm install -g mbview
 
+Get a [Mapbox access token](https://www.mapbox.com/help/create-api-access-token/) for the basemap and `export MAPBOX_ACCESS_TOKEN=...`
+
 Run `mbview`:
   
     mbview --port 4999 test.mbtiles

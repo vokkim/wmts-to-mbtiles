@@ -29,11 +29,11 @@ zoom: 10
 
 Fetch default layer from `liikennevirasto.fi` and output `test.mbtiles`:
 
-    node index.js --output test.mbtiles
+    wmts-to-mbtiles --output test.mbtiles
 
 Fetch smaller area:
 
-    node index.js --zoom 15 --bbox "23.411 59.731 26.850 60.562" --output test.mbtiles
+    wmts-to-mbtiles --zoom 15 --bbox "23.411 59.731 26.850 60.562" --output test.mbtiles
 
 Helper for defining the bbox: http://boundingbox.klokantech.com/
 
@@ -58,7 +58,7 @@ Run `mbview`:
  - `echo 'export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH' >> ~/.bash_profile`
 
 2. Use [gdaladdo](http://www.gdal.org/gdaladdo.html) to generate zoom levels for existing mbtiles file:
-
+    
     gdaladdo -r cubic test.mbtiles 2 4 8 16 32
 
 Use `cubic` sampling for better results.
